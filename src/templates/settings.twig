@@ -1,0 +1,48 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Customer.io plugin for Craft CMS 3.x
+ *
+ * Customer.io Settings.twig
+ *
+ * @author    Wildbit
+ * @copyright Copyright (c) 2021 Wildbit
+ * @link      https://wildbit.com
+ * @package   Customerio
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+    label: 'Site ID',
+    instructions: '',
+    id: 'siteId',
+    name: 'siteId',
+    value: settings['siteId']})
+}}
+
+{{ forms.textField({
+    label: 'API Key',
+    instructions: '',
+    id: 'apiKey',
+    name: 'apiKey',
+    value: settings['apiKey']})
+}}
+
+{{ forms.textField({
+    label: 'Attribute Prefix',
+    instructions: 'For example: wb_',
+    id: 'attrPrefix',
+    name: 'attrPrefix',
+    value: settings['attrPrefix']})
+}}
+
+{{ forms.textField({
+    label: 'Success URL',
+    instructions: 'Where should users be sent after subscribing?',
+    id: 'successUrl',
+    name: 'successUrl',
+    value: settings['successUrl']})
+}}

@@ -1,0 +1,45 @@
+{
+  "name": "wildbit/customerio",
+  "description": "Send newsletter subscribers to Customer.io",
+  "type": "craft-plugin",
+  "version": "1.1.0",
+  "keywords": [
+    "craft",
+    "cms",
+    "craftcms",
+    "craft-plugin",
+    "customer.io"
+  ],
+  "support": {
+    "docs": "https://github.com/wildbit/customerio/blob/master/README.md",
+    "issues": "https://github.com/wildbit/customerio/issues"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Wildbit",
+      "homepage": "https://wildbit.com"
+    }
+  ],
+  "require": {
+    "craftcms/cms": "^3.0.0",
+    "matt-west/craft-recaptcha": "^1.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "wildbit\\customerio\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "Customer.io",
+    "handle": "customerio",
+    "developer": "Wildbit",
+    "developerUrl": "https://wildbit.com",
+    "documentationUrl": "https://github.com/wildbit/customerio/blob/master/README.md",
+    "changelogUrl": "https://raw.githubusercontent.com/wildbit/customerio/master/CHANGELOG.md",
+    "components": {
+      "subscribers": "wildbit\\customerio\\services\\Subscribers"
+    },
+    "class": "wildbit\\customerio\\Customerio"
+  }
+}
