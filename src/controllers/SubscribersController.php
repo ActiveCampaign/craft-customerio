@@ -72,7 +72,11 @@ class SubscribersController extends Controller
     // Create a new subscriber model
     $subscriber = new Subscriber();
     $subscriber->email = $post["cio-liam3"];
-    $subscriber->name = $post["cio-3man"];
+
+    if (array_key_exists('cio-3man', $post)) {
+      $subscriber->name = $post["cio-3man"];  
+    }
+    
     $subscriber->lists = $post["lists"];
     $subscriber->page = Craft::$app->request->referrer;
 
