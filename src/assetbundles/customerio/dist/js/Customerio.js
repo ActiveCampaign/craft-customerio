@@ -19,10 +19,10 @@ var CustomerioForm = {
     });
   },
 
-  loadCaptcha: function() {
+  loadCaptcha: function(form) {
     let _this = this;
 
-    document.querySelectorAll(".g-recaptcha").forEach(function(captcha) {
+    form.querySelectorAll(".g-cio-recaptcha").forEach(function(captcha) {
       let elementId = captcha.getAttribute("id");
       let captchaId = grecaptcha.render(elementId);
 
@@ -36,7 +36,7 @@ var CustomerioForm = {
     window.CustomerioForm.formTarget = e.target;
 
     let captchaId = window.CustomerioForm.formTarget
-      .querySelector(".g-recaptcha")
+      .querySelector(".g-cio-recaptcha")
       .getAttribute("data-recaptcha-id");
 
     grecaptcha.execute(captchaId);
@@ -106,5 +106,7 @@ window.handleRecaptcha = function(token) {
 };
 
 window.loadRecaptcha = function() {
-  CustomerioForm.loadCaptcha();
+  document.querySelectorAll(".js-customerio-form").forEach(function(form) {
+    CustomerioForm.loadCaptcha(form);
+  });
 };
