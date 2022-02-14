@@ -99,7 +99,7 @@ var CustomerioForm = {
 };
 
 window.CustomerioForm = CustomerioForm;
-window.addEventListener("load", CustomerioForm.init);
+document.addEventListener("DOMContentLoaded", CustomerioForm.init);
 
 window.handleRecaptcha = function(token) {
   window.CustomerioForm.submitForm(token);
