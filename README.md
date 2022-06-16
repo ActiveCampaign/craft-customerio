@@ -51,4 +51,4 @@ The plugin does not contain a template for the subscription form as this will va
 
 ---
 
-Brought to you by [Wildbit](https://wildbit.com)
+Brought to you by [ActiveCampaign](https://activecampaign.com)
