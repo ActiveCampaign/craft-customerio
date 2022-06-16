@@ -11,14 +11,14 @@
     "customer.io"
   ],
   "support": {
-    "docs": "https://github.com/wildbit/craft-customerio/blob/master/README.md",
-    "issues": "https://github.com/wildbit/craft-customerio/issues"
+    "docs": "https://github.com/activecampaign/craft-customerio/blob/master/README.md",
+    "issues": "https://github.com/activecampaign/craft-customerio/issues"
   },
   "license": "MIT",
   "authors": [
     {
-      "name": "Wildbit",
-      "homepage": "https://wildbit.com"
+      "name": "ActiveCampaign",
+      "homepage": "https://activecampaign.com"
     }
   ],
   "require": {
@@ -33,10 +33,10 @@
   "extra": {
     "name": "Customer.io",
     "handle": "customerio",
-    "developer": "Wildbit",
-    "developerUrl": "https://wildbit.com",
-    "documentationUrl": "https://github.com/wildbit/craft-customerio/blob/master/README.md",
-    "changelogUrl": "https://raw.githubusercontent.com/wildbit/craft-customerio/master/CHANGELOG.md",
+    "developer": "ActiveCampaign",
+    "developerUrl": "https://activecampaign.com",
+    "documentationUrl": "https://github.com/activecampaign/craft-customerio/blob/master/README.md",
+    "changelogUrl": "https://raw.githubusercontent.com/activecampaign/craft-customerio/master/CHANGELOG.md",
     "components": {
       "subscribers": "wildbit\\customerio\\services\\Subscribers"
     },

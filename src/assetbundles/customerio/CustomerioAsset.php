@@ -4,8 +4,8 @@
  *
  * Send newsletter subscribers to Customer.io
  *
- * @link      https://wildbit.com
- * @copyright Copyright (c) 2021 Wildbit
+ * @link      https://activecampaign.com
+ * @copyright Copyright (c) 2022 ActiveCampaign
  */
 
 namespace wildbit\customerio\assetbundles\customerio;
